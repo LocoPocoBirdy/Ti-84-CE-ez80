@@ -1,0 +1,20 @@
+######### HEX CODES ##########
+Toggle Program Mode:
+Hex:
+FD7E08EE02FD7708C9
+Asm:
+ld a,(iy+8)
+xor 2
+ld (iy+8),a
+ret
+-----------------------------------
+Text Inverse:
+Hex:
+FD7E05EE08FD7705C9
+Asm:
+ld a,(iy+textFlags)
+xor 1&lt;&lt;textInverse
+ld (iy+textFlags),a
+ret
+-----------------------------------
+###################################################################
